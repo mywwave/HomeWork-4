@@ -15,7 +15,10 @@ for (int i = 0; i < numbers.Length; i++)
 }
 
 Console.WriteLine("Первый массив: ");
-
+foreach (int i in numbers)
+{
+    Console.Write($"| {i} ");
+}
 
 Console.WriteLine("\nВторой массив: ");
 foreach (int i in numbers2)

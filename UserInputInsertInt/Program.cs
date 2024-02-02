@@ -4,7 +4,8 @@
 //TODO: Сделать проверку введенного числа на целое положительное 
 
 
-while (true) {
+while (true)
+{
     Console.WriteLine("Введите любое целое положительное число");
     try
     {
@@ -17,8 +18,13 @@ while (true) {
             continue;
         }
 
+        for (int i = 1; i <= number; i++)
+        {
+            sum += i;
+        }
+
         Console.WriteLine($"Сумма чисел от 1 до {number} = {sum}");
-        
+        break;
     }
     catch
     {
